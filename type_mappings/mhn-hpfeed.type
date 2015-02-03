@@ -1,5 +1,5 @@
 {
-    "hpfeed": {
+    "mhnfeed": {
         "properties": {
             "channel": {
                 "type": "string"
@@ -14,15 +14,9 @@
                 "type": "date",
                 "format": "dateOptionalTime"
             },
-            "normalized": {
-                "type": "boolean"
-            },
             "payload": {
                 "properties": {
                     "commands": {
-                        "type": "string"
-                    },
-                    "credentials": {
                         "type": "string"
                     },
                     "endTime": {
@@ -30,8 +24,7 @@
                         "format": "dateOptionalTime"
                     },
                     "hostIP": {
-                        "type": "ip",
-                        "null_value": "null"
+                        "type": "ip"
                     },
                     "hostPort": {
                         "type": "long"
@@ -40,8 +33,7 @@
                         "type": "string"
                     },
                     "peerIP": {
-                        "type": "ip",
-                        "null_value": "null"
+                        "type": "ip"
                     },
                     "peerPort": {
                         "type": "long"
@@ -63,6 +55,48 @@
                         "type": "string"
                     }
                 }
+            },
+            "peer_area_code": {
+                "type": "long"
+            },
+            "peer_city_name": {
+                "type": "string"
+            },
+            "peer_continent_code": {
+                "type": "string"
+            },
+            "peer_country_code2": {
+                "type": "string"
+            },
+            "peer_country_code3": {
+                "type": "string"
+            },
+            "peer_country_name": {
+                "type": "string"
+            },
+            "peer_dma_code": {
+                "type": "long"
+            },
+            "peer_geopoint": {
+                "type": "geo_point"
+            },
+            "peer_latitude": {
+                "type": "double"
+            },
+            "peer_longitude": {
+                "type": "double"
+            },
+            "peer_postal_code": {
+                "type": "string"
+            },
+            "peer_real_region_name": {
+                "type": "string"
+            },
+            "peer_region_name": {
+                "type": "string"
+            },
+            "peer_timezone": {
+                "type": "string"
             },
             "timestamp": {
                 "type": "date",
